@@ -1,2 +1,22 @@
-/* Global styles for the entire page */ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; color: #333333; margin: 0; padding: 0; display: flex; flex-direction: column; min-height: 100vh; align-items: center; justify-content: center; } /* Header styling */ header { text-align: center; margin-bottom: 20px; } header h1 { color: #2563eb; margin-bottom: 5px; } /* Card container styling */ .card { background-color: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); text-align: center; max-width: 400px; } /* Button styling */ button { background-color: #2563eb; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 6px; cursor: pointer; transition: background-color 0.2s ease; margin-top: 15px; } /* Button hover effect */ button:hover { background-color: #1d4ed8; } /* Footer styling */ footer { margin-top: 30px; font-size: 14px; color: #6b7280; }
+// Wait for the HTML document to fully load before running code
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // Grab the button element from the HTML using its ID
+    const colorBtn = document.getElementById('colorBtn');
 
+    // Array of fun background colors to cycle through
+    const colors = ['#f0f2f5', '#e0f2fe', '#fce7f3', '#fef3c7', '#dcfce7'];
+    
+    let colorIndex = 0;
+
+    // Listen for a "click" event on the button
+    colorBtn.addEventListener('click', () => {
+        // Move to the next color in the array, looping back to the start if needed
+        colorIndex = (colorIndex + 1) % colors.length;
+        
+        // Change the background color of the body
+        document.body.style.backgroundColor = colors[colorIndex];
+        
+        console.log("Button was clicked! Background color changed.");
+    });
+});
