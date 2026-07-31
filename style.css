@@ -57,3 +57,92 @@ footer {
     font-size: 14px;
     color: #6b7280;
 }
+/* Global styles for the entire page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fixed styling for the left-side mini-game button */
+.side-btn {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #10b981;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    z-index: 1000;
+}
+
+/* Hover effect for the side button */
+.side-btn:hover {
+    background-color: #059669;
+    transform: translateY(-50%) scale(1.05);
+}
+
+/* Utility class to hide elements until needed */
+.hidden {
+    display: none;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #2563eb;
+    margin-bottom: 5px;
+}
+
+/* Card container styling */
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 15px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #6b7280;
+}
