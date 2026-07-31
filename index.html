@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags define character set and mobile responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Awesome Website</title>
-    <!-- Link the CSS stylesheet to style our HTML -->
+    <!-- Link to your external stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Main header section of the webpage -->
-    <header>
-        <h1>Welcome to My Website!</h1>
-        <p>Built with HTML, CSS, and JavaScript.</p>
-    </header>
+    <!-- Left-side Mini-Game Button -->
+    <button id="minigame-btn" class="side-btn">Play Mini-Game!</button>
 
-    <!-- Main content area -->
-    <main>
-        <section class="card">
-            <h2>Hello, World!</h2>
-            <p>This is your brand new starter template. Click the button below to see JavaScript in action!</p>
-            <!-- Interactive Button -->
-            <button id="colorButton">Click Me!</button>
-        </section>
+    <!-- Main Content Container -->
+    <main class="container">
+        <h1>Welcome to My Website!</h1>
+        <p>Explore around and click the button on the left to play a fun game!</p>
     </main>
 
-    <!-- Footer section at the bottom -->
-    <footer>
-        <p>&copy; 2026 My Web Development Project</p>
-    </footer>
+    <!-- Mini-Game Modal Popup Container -->
+    <div id="game-modal" class="modal hidden">
+        <div class="modal-content">
+            <!-- Close button for the modal -->
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Number Guessing Mini-Game!</h2>
+            <p>I'm thinking of a number between 1 and 10. Can you guess it?</p>
+            <input type="number" id="user-guess" min="1" max="10" placeholder="Enter 1-10">
+            <button id="guess-btn">Submit Guess</button>
+            <p id="game-message"></p>
+        </div>
+    </div>
 
-    <!-- Link the JavaScript file at the bottom of the body -->
+    <!-- Link to your external JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
