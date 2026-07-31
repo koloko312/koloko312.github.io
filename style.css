@@ -47,3 +47,40 @@ button {
 button:hover {
     background-color: #4338ca;
 }
+/* --- VIDEO GAME STYLES (Added Below) --- */
+
+/* Divider line separating the website from the game */
+.section-divider {
+    border: none;
+    border-top: 2px solid #e5e7eb;
+    margin: 30px 0;
+}
+
+/* Game heading style */
+.game-section h2 {
+    color: #eab308;
+    margin-bottom: 10px;
+}
+
+/* Game button styling */
+#gameBtn {
+    background-color: #eab308;
+    color: #1f2937;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Game button hover effect */
+#gameBtn:hover {
+    background-color: #ca8a04;
+}
+
+/* Game button click animation */
+#gameBtn:active {
+    transform: scale(0.95);
+}
