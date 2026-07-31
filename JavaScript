@@ -1,0 +1,25 @@
+// Wait for the DOM (Document Object Model) to fully load before running code
+document.addEventListener("DOMContentLoaded", () => {
+    
+    // Select the button from our HTML document using its ID
+    const colorButton = document.getElementById("colorButton");
+    
+    // Keep track of state for our click event
+    let isOriginalColor = true;
+
+    // Add an event listener to listen for a 'click' event on the button
+    colorButton.addEventListener("click", () => {
+        if (isOriginalColor) {
+            // Change the body background color when clicked
+            document.body.style.backgroundColor = "#dbeafe";
+            colorButton.textContent = "Color Changed!";
+        } else {
+            // Revert back to the original background color
+            document.body.style.backgroundColor = "#f0f2f5";
+            colorButton.textContent = "Click Me!";
+        }
+        
+        // Toggle the state flag
+        isOriginalColor = !isOriginalColor;
+    });
+});
