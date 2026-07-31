@@ -20,3 +20,17 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("Button was clicked! Background color changed.");
     });
 });
+    // --- PART 2: Video Game Code (Added Below) ---
+    const gameBtn = document.getElementById('gameBtn');
+    const scoreDisplay = document.getElementById('score');
+    
+    let score = 0; // Track the player's game score
+
+    // Listen for clicks on the game button to increase score
+    gameBtn.addEventListener('click', () => {
+        score++; // Increment score by 1
+        scoreDisplay.textContent = score; // Update the HTML counter text
+        
+        console.log(`Game score updated: ${score}`);
+    });
+});
